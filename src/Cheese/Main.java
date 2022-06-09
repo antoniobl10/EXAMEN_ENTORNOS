@@ -1,8 +1,8 @@
 /*
-*	grupo  :
-*	alumno :
-*	n.exp. :
-*	fecha  :
+*	grupo  : GDAM 2-1
+*	alumno : Antonio Blanco Araya
+*	n.exp. : 7250
+*	fecha  : 09/06/2022
  */
 package Cheese;
 
