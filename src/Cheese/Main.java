@@ -19,6 +19,11 @@ public class Main {
      public static void main(String[] args) {
     
          System.out.println("1º Gdam: Entornos de desarrollo");
+         Producto patatas = new Producto("PATATAS12345", "hortalizas", 10, 5.5);
+         Producto helados = new Producto("HELADOSMAGNUM88", "helados", 6, 0.5);
+         
+         patatas.imprime_etiqueta();
+         helados.imprime_etiqueta();
 
      }
 }
