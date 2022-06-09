@@ -49,7 +49,14 @@ public class ListaProductos {
     
         if ((campo.replace(" ","").isEmpty()) || (campo == null))  return true; else return false;
     }
-
+    
+    /**
+     * 
+     * @param nombre constructor en el que recibe el nombre
+     *  y lo asigna a la variable nombreLista. 
+     *  Si no recibe nada en el String lo asigna como noNamed.
+     */
+    
     public ListaProductos(String nombre) {
     	if (parametro_vacio(nombre)) {
     		this.nombreLista = "noNamed";
@@ -58,9 +65,21 @@ public class ListaProductos {
     	this.nombreLista = nombre;
     	}
     }
+    
+    /**
+     * 
+     * @return devuelve el número de productos que es un número entero.
+     */
+    
     public int totalProductos(){
             return this.getNumProductos();
     }
+    
+    /**
+     * 
+     * @param prod recibe como parámetro un producto.
+     * @return tras añadirlo a la listaP retorna el producto.
+     */
         
     public Producto registraProducto(Producto prod) {
         
@@ -72,7 +91,14 @@ public class ListaProductos {
         this.setNumProductos(n);
         return prod;
     }
-
+    
+    /**
+     * 
+     * @param codigo recibe el código del producto que es un String
+     * @return tras eliminar el producto de la lista retorna el producto 
+     * que se haya encontrado con ese código.
+     */
+    
     public Producto descartaProducto(String codigo) { 
         
         Producto prod = encuentraProducto(codigo);
@@ -83,6 +109,13 @@ public class ListaProductos {
         }
         return prod;
     }
+    
+    /**
+     * 
+     * @param codigo recibe el código del producto para encontrarlo.
+     * @return si en la lista aparece el código retorna el producto,
+     * en caso contratrio devuelve el código del producto.
+     */
 
     public Producto encuentraProducto(String codigo) { 
         Producto prod = null;
